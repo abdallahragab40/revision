@@ -10,94 +10,28 @@
   <body>
     <h1>Welcome to Book Store</h1>
 
-    <form action="#">
-      <div>
-        <label for="email"> email </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="email address"
-          autofocus
-        />
-      </div>
-      <br />
-      <div>
-        <label for="password"> password </label>
-        <input type="password" id="password" name="password" required />
-      </div>
-      <br />
-      <div>
-        <label for="color">color</label>
-        <input type="color" name="color" />
-      </div>
-      <div>
-        <label for="range">range</label>
-        <input
-          type="range"
-          min="0"
-          max="100"
-          name="range"
-          step="5"
-          value="10"
-        />
-      </div>
-      <div>
-        <label for="number">number</label>
-        <input type="number" min="0" max="100" name="number" step="5" />
-      </div>
-      <div>
-        <input type="radio" id="male" name="gender" value="male" />
-        <label for="male">male</label>
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">female</label>
-      </div>
-
-      <div>
-        <input
-          type="checkbox"
-          id="tennis"
-          name="hobbies"
-          value="tennis"
-          checked
-        />
-        <label for="tennis">tennis</label>
-        <input type="checkbox" id="sport" name="hobbies" value="sport" />
-        <label for="sport">sport</label>
-      </div>
-
-      <div>
-        <select name="users" id="users">
-          <option value="" selected disabled hidden>choose</option>
-          <option value="ahmed">ahmed</option>
-          <option value="ali">ali</option>
-          <option value="ayman">ayman</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="notes" style="display: block">Notes</label>
-        <textarea
-          name="notes"
-          id="notes"
-          cols="30"
-          rows="10"
-          style="resize: none"
-        ></textarea>
-      </div>
-
-      <div>
-        <input type="file" multiple />
-      </div>
-
-      <div>
-        <label for="search">search</label>
-        <input type="search" id="search" />
-      </div>
-
-      <input type="reset" value="reset" />
-      <input type="submit" value="Register" />
+    <h3>Chapter 1</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+      possimus rem alias sed officia repellat tempora, magni accusamus officiis
+      rerum odio maiores laborum at numquam sint earum ab, esse ipsum! Enim
+      beatae dolore id reiciendis, est perferendis facere inventore aliquid,
+      reprehenderit, cum cupiditate accusamus voluptates suscipit quis expedita
+      officia aliquam.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil ipsum aut
+      doloremque maxime non sapiente excepturi porro minus reprehenderit vel.
+    </p>
+    <h2>Inside chapter 1</h2>
+    <form action="">
+      <label for="skill1">Skill One</label>
+      <input type="checkbox" id="skill1" checked />
+      <label for="skill2">Skill Two</label>
+      <input type="checkbox" id="skill2" />
     </form>
+
+    <div role="checkbox" aria-checked="true" tabindex="0">Plan one</div>
+    <div role="checkbox" tabindex="0">Plan two</div>
   </body>
 </html>
