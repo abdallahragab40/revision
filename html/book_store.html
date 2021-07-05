@@ -6,50 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="This Is Description For My First Page" />
     <title>My First Page</title>
-    <style></style>
+    <style>
+      table {
+        width: 100%;
+      }
+
+      table th,
+      table td {
+        border: 1px solid black;
+      }
+    </style>
     <link rel="stylesheet" href="" />
     <script src=""></script>
   </head>
   <body>
-    <h2>My Info</h2>
-    <p>My name is: <b>Abdallah Ragab</b></p>
-    <p>I am <strong>Available</strong> For Hire</p>
-    <p>
-      My Hour Old Price is <del>$10</del> And The New Price is <mark>$30</mark>
-    </p>
-    <p>
-      Visit My Website From This Link
-      <a href="#" target="_blank">Elzero Academy</a>
-    </p>
-    <hr />
-    <h2>Here Is Some Of My Clients</h2>
-    <img src="https://via.placeholder.com/50x50/F00/FFF" alt="red" />
-    <img src="https://via.placeholder.com/50x50/00F/FFF" alt="blue" />
-    <img src="https://via.placeholder.com/50x50/0F0/FFF" alt="green" />
-    <hr />
-    <h2>My Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>
-        JavaScript
-        <ul>
-          <li>Vuejs</li>
-          <li>Reactjs</li>
-          <li>
-            Angular
-            <ol start="4">
-              <li>V4.0</li>
-              <li>V5.0</li>
-              <li>V6.0</li>
-              <li>V7.0</li>
-              <li>V8.0</li>
-            </ol>
-          </li>
-          <li>Svelte</li>
-        </ul>
-      </li>
-      <li>Python</li>
-    </ul>
+    <table>
+      <caption>
+        Members Data
+      </caption>
+      <thead>
+        <tr>
+          <th>Group</th>
+          <th>Avatar</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Character</th>
+          <th>Profile</th>
+          <tbody>
+            <tr>
+              <td rowspan="2">Ninja</td>
+              <td>
+                <img src="https://via.placeholder.com/40x40/F00/FFF" alt="" />
+              </td>
+              <td>
+                Osama<br />
+                Mohamed
+              </td>
+              <td>
+                o1@nn.sa
+                <hr />
+                o2@nn.sa
+              </td>
+              <td>&copy;</td>
+              <td><a href="#" target="_blank">Profile</a></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="https://via.placeholder.com/40x40/00F/FFF" alt="" />
+              </td>
+              <td>
+                Shady<br />
+                Nabil
+              </td>
+              <td>s@nn.sa</td>
+              <td>&trade;</td>
+              <td><a href="#" target="_blank">Profile</a></td>
+            </tr>
+            <tr>
+              <td>Monsters</td>
+              <td>
+                <img src="https://via.placeholder.com/40x40/000/FFF" alt="" />
+              </td>
+              <td>
+                Mohamed<br />
+                Ibrahmin
+              </td>
+              <td>m@nn.sa</td>
+              <td>&reg;</td>
+              <td><a href="#" target="_blank">Profile</a></td>
+            </tr>
+            <tr>
+              <td colspan="5">Total Members</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </tr>
+      </thead>
+    </table>
   </body>
 </html>
