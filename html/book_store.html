@@ -11,119 +11,57 @@
     <script src=""></script>
   </head>
   <body>
-    <form action="#">
-      <input
-        type="text"
-        id="token"
-        name="token"
-        value="b92f1fc2fce391ad7af633723afd3055"
-        hidden
-      />
+    <form action="#" target="_blank" novalidate>
       <div>
-        <label for="email">Email</label><br />
-        <input type="email" id="email" name="email" value="o@o.com" readonly />
-      </div>
-      <hr />
-      <div>
-        <label for="username">Username</label><br />
+        <label for="search">Search</label> <br />
         <input
-          type="text"
-          id="username"
-          name="username"
-          required
-          placeholder="type a username"
-          autofocus
-          minlength="5"
-          maxlength="20"
-        />
-      </div>
-      <hr />
-      <div>
-        <h3>Skills</h3>
-        <input
-          type="checkbox"
-          name="skills"
-          id="problem"
-          value="Problem Solving"
-          checked
-        />
-        <label for="problem">Problem Solving</label>
-        <input
-          type="checkbox"
-          name="skills"
-          id="logical"
-          value="Logical Thinking"
-        />
-        <label for="logical">Logical Thinking</label>
-        <input
-          type="checkbox"
-          name="skills"
+          type="search"
           id="search"
-          value="Advanced Search"
+          name="search"
+          placeholder="Enter A Search Word"
+          autofocus
         />
-        <label for="search">Advanced Search</label>
-        <input type="checkbox" name="skills" id="analysis" value="Analysis" />
-        <label for="analysis">Analysis</label>
-        <input type="checkbox" name="skills" id="planning" value="Planning" />
-        <label for="planning">Planning</label>
+      </div>
+      <br />
+      <div>
+        <label for="file">Upload</label> <br />
+        <input type="file" id="file" name="file" />
+      </div>
+      <br />
+
+      <div>
+        <label for="url">Url</label> <br />
+        <input type="url" id="url" name="url" required />
+      </div>
+
+      <hr />
+
+      <div>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" value="1982-10-25" />
+      </div>
+      <br />
+      <div>
+        <label for="month">Month</label>
+        <input type="month" id="month" name="month" value="1982-10" />
       </div>
       <hr />
-      <div>
-        <h3>Job</h3>
-        <div>
-          <input
-            type="radio"
-            name="job"
-            id="front"
-            value="Front-End Developer"
-            checked
-          />
-          <label for="front">Front-End Developer</label>
-          <input type="radio" name="job" id="back" value="Back-End Developer" />
-          <label for="back">Back-End Developer</label>
-          <input
-            type="radio"
-            name="job"
-            id="analyst"
-            value="Business Analyst"
-          />
-          <label for="analyst">Business Analyst</label>
-          <input type="radio" name="job" id="manager" value="Project Manager" />
-          <label for="manager">Project Manager</label>
-          <input type="radio" name="job" id="scrum" value="Scrum Master" />
-          <label for="scrum">Scrum Master</label>
-        </div>
-      </div>
-      <hr />
-      <div>
-        <label for="book">Choose Book: </label>
-        <select name="book" id="book">
-          <optgroup label="PHP">
-            <option value="v5.0">v5.0</option>
-            <option value="v7.0">v7.0</option>
-            <option value="v8.0">v8.0</option>
-          </optgroup>
-          <optgroup label="Python">
-            <option value="v2.0">v2.0</option>
-            <option value="v3.0">v3.0</option>
-            <option value="v3.9">v3.9</option>
-          </optgroup>
-        </select>
-      </div>
-      <hr />
-      <div>
-        <label for="breif">Brief</label><br />
-        <textarea
-          name="breif"
-          id="breif"
-          cols="40"
-          rows="10"
-          placeholder="Write Here Why You Want To Learn Programming"
-        ></textarea>
-      </div>
+      <pre>
+ Hello Line One
+ Hello Line Two
+ Hello Line Three
+       Hello Line Four
+      </pre>
       <hr />
       <input type="reset" value="Empty" />
-      <input type="submit" value="Send" />
+      <input type="submit" value="Save" />
+      <hr />
+      <iframe
+        src="https://elzero.org"
+        width="100%"
+        height="400px"
+        frameborder="0"
+      ></iframe>
     </form>
   </body>
 </html>
