@@ -11,132 +11,62 @@
     <script src=""></script>
   </head>
   <body>
-    <div>
-      #1
-      <ul>
-        <li>Header</li>
-        <li>Nav</li>
-        <li>Main</li>
-        <li>Aside</li>
-        <li>Figure</li>
-        <li>Footer</li>
-        <li>FigCaption</li>
-        <li>Section</li>
-        <li>Article</li>
-      </ul>
-    </div>
-    <hr />
-
-    <div>
-      #2
-      <header>
-        <h1>Book Store</h1>
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-          <li>Link 4</li>
-          <li>Link 5</li>
-        </ul>
-      </header>
-      <nav>
-        <ul>
-          <li>Nav 1</li>
-          <li>Nav 2</li>
-          <li>Nav 3</li>
-          <li>Nav 4</li>
-          <li>Nav 5</li>
-          <li>Nav 6</li>
-        </ul>
-      </nav>
-      <main>
-        <article>
-          <h2>Article Head 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            dolores voluptas ab labore facere dolore obcaecati sapiente
-            accusantium corrupti vitae quia distinctio, maxime nihil deleniti
-            dolorem repellendus soluta reprehenderit quas blanditiis possimus
-            nisi facilis, itaque cupiditate? Tempora nesciunt fugiat perferendis
-            enim vitae, eius praesentium libero rerum, illo quaerat nulla
-            recusandae.
-          </p>
-          <img src="https://via.placeholder.com/40x40/000/FFF" alt="" />
-          <br />
-          <a href="#" target="_blank">Learn more</a>
-          <hr />
-        </article>
-        <article>
-          <h2>Article Head 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            dolores voluptas ab labore facere dolore obcaecati sapiente
-            accusantium corrupti vitae quia distinctio, maxime nihil deleniti
-            dolorem repellendus soluta reprehenderit quas blanditiis possimus
-            nisi facilis, itaque cupiditate? Tempora nesciunt fugiat perferendis
-            enim vitae, eius praesentium libero rerum, illo quaerat nulla
-            recusandae.
-          </p>
-          <img src="https://via.placeholder.com/40x40/000/FFF" alt="" />
-          <br />
-          <a href="#" target="_blank">Learn more</a>
-          <hr />
-        </article>
-        <article>
-          <h2>Article Head 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            dolores voluptas ab labore facere dolore obcaecati sapiente
-            accusantium corrupti vitae quia distinctio, maxime nihil deleniti
-            dolorem repellendus soluta reprehenderit quas blanditiis possimus
-            nisi facilis, itaque cupiditate? Tempora nesciunt fugiat perferendis
-            enim vitae, eius praesentium libero rerum, illo quaerat nulla
-            recusandae.
-          </p>
-          <img src="https://via.placeholder.com/40x40/000/FFF" alt="" />
-          <br />
-          <a href="#" target="_blank">Learn more</a>
-        </article>
-      </main>
-      <aside>
-        <h2>Categories</h2>
-        <ul>
-          <li>Cat 1</li>
-          <li>Cat 2</li>
-          <li>Cat 3</li>
-          <li>Cat 4</li>
-          <li>Cat 5</li>
-        </ul>
-      </aside>
-      <footer>&copy; Copyright 2021</footer>
+    <form action="test.py" method="post">
+      <input type="text" id="status" name="status" value="done" hidden />
+      <div>
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="type a email"
+        />
+      </div>
       <hr />
-    </div>
-
-    <div>
-      <p>#3</p>
-      <audio controls autoplay loop>
-        <source src="assets/audio.mp3" type="audio/mpeg" />
-        <source src="assets/audio.wav" type="audio/wav" />
-        <source src="assets/audio.ogg" type="audio/ogg" />
-        Your Browser does not support audio playback.
-      </audio>
-    </div>
-
-    <div>
-      <p>#4</p>
-      <video
-        controls
-        autoplay
-        muted
-        poster="https://via.placeholder.com/400x400/0FF/FFF"
-      >
-        <source src="assets/video.mp4" type="video/mp4" />
-        <source src="assets/video.3gp" type="video/3gp" />
-        <source src="assets/video.ogg" type="video/ogg" />
-        Your Browser does not support video playback.
-        <track src="en.vtt" kind="subtitles" srclang="en" label="English" />
-        <track src="fr.vtt" kind="subtitles" srclang="fr" label="French" />
-      </video>
-    </div>
+      <div>
+        <label for="username">Username</label><br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          placeholder="type a username"
+        />
+      </div>
+      <hr />
+      <div>
+        <label for="password">Password</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="type a password"
+        />
+      </div>
+      <hr />
+      <div>
+        <label for="mobile">Mobile</label><br />
+        <input
+          type="text"
+          id="mobile"
+          name="mobile"
+          placeholder="type a mobile"
+        />
+      </div>
+      <hr />
+      <div>
+        <label for="subject">Subject</label><br />
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="type a subject"
+        />
+      </div>
+      <hr />
+      <input type="reset" value="Empty Form" />
+      <input type="submit" value="Send Data" />
+    </form>
   </body>
 </html>
