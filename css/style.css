@@ -1,87 +1,49 @@
-/* ? 1 */
-div[class^="assign-1"] {
-  width: 500px;
-  margin: 20px auto;
+div {
+  display: inline-block;
+  font-size: 24px;
   padding: 20px;
-  color: white;
-  /* background-color: blueviolet; */
-  /* background-color: rgb(138, 43, 226); */
-  /* background-color: hsl(271, 76%, 53%); */
-  /* background-color: #8a2be2; */
+  margin: 10px;
+  background-color: gainsboro;
+  outline: 5px solid black;
 }
 
-.assign-1-shape-1 {
-  background-color: rgb(138, 43, 226);
+.shape-1 {
+  border: 5px solid red;
 }
 
-.assign-1-shape-2 {
-  background-color: rgba(138, 43, 226, 0.5);
+.shape-2 {
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+  border-right: 5px solid green;
+  border-left: 5px solid green;
 }
 
-.assign-1-shape-3 {
-  background-color: rgba(138, 43, 226, 0.1);
+.shape-3 {
+  border-top: 5px dashed red;
+  border-bottom: 5px dashed blue;
+  border-right: 5px dashed green;
+  border-left: 5px dashed yellow;
 }
 
-/* ? 2 */
-div[class^="assign-2"],
-div[class^="assign-3"],
-div[class^="assign-4"] {
+div[class^="note-"] {
   width: 400px;
-  height: 400px;
-  color: white;
-  padding: 20px;
-  margin: 20px;
-  background-color: rgb(233, 233, 233);
-  background-image: url("assets/css-assignment-5-8.png");
+  background-color: gainsboro;
+  outline: none;
+  display: block;
 }
 
-.assign-2-shape-1 {
-  background-repeat: no-repeat;
+.note {
+  outline: none;
 }
 
-.assign-2-shape-2 {
-  background-repeat: repeat-y;
+.note-1 {
+  border-left: 5px solid crimson;
 }
 
-.assign-2-shape-3 {
-  background-repeat: repeat-x;
+.note-2 {
+  visibility: hidden;
 }
 
-/* ? 3 */
-.assign-3-shape-1 {
-  background-repeat: no-repeat;
-}
-
-.assign-3-shape-2 {
-  background-repeat: repeat-y;
-  background-position: right;
-}
-
-.assign-3-shape-3 {
-  background-repeat: repeat-x;
-  background-position: bottom;
-}
-
-/* ? 4 */
-.assign-4-shape-1 {
-  background-repeat: no-repeat;
-  background-size: 80%;
-}
-
-.assign-4-shape-2 {
-  background-repeat: repeat-y;
-  background-position: right;
-  background-size: 80%;
-}
-
-.assign-4-shape-3 {
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: 80%;
-}
-
-.assign-4-shape-4 {
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 50%;
+.note-3 {
+  border-left: 5px solid darkcyan;
 }
