@@ -1,68 +1,87 @@
-/* Any Element With Class Title */
-.title {
+/* ? 1 */
+div[class^="assign-1"] {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  color: white;
+  /* background-color: blueviolet; */
+  /* background-color: rgb(138, 43, 226); */
+  /* background-color: hsl(271, 76%, 53%); */
+  /* background-color: #8a2be2; */
 }
 
-/* Any Element With ID nav */
-#nav {
+.assign-1-shape-1 {
+  background-color: rgb(138, 43, 226);
 }
 
-/* any div element */
-div {
+.assign-1-shape-2 {
+  background-color: rgba(138, 43, 226, 0.5);
 }
 
-/* any h2 element */
-h2 {
+.assign-1-shape-3 {
+  background-color: rgba(138, 43, 226, 0.1);
 }
 
-/* valid */
-._user-name {
+/* ? 2 */
+div[class^="assign-2"],
+div[class^="assign-3"],
+div[class^="assign-4"] {
+  width: 400px;
+  height: 400px;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgb(233, 233, 233);
+  background-image: url("assets/css-assignment-5-8.png");
 }
 
-/* valid */
-.-user-name {
+.assign-2-shape-1 {
+  background-repeat: no-repeat;
 }
 
-/* valid */
-.-user-name {
+.assign-2-shape-2 {
+  background-repeat: repeat-y;
 }
 
-/* invalid */
-.1user-name {
+.assign-2-shape-3 {
+  background-repeat: repeat-x;
 }
 
-/* invalid */
-.@user-name {
+/* ? 3 */
+.assign-3-shape-1 {
+  background-repeat: no-repeat;
 }
 
-/* invalid */
-.user@name {
-  color: red;
+.assign-3-shape-2 {
+  background-repeat: repeat-y;
+  background-position: right;
 }
 
-/* valid */
-._user10name {
+.assign-3-shape-3 {
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
 
-/* valid */
-.u {
+/* ? 4 */
+.assign-4-shape-1 {
+  background-repeat: no-repeat;
+  background-size: 80%;
 }
 
-/* bad */
-.USERNAME {
+.assign-4-shape-2 {
+  background-repeat: repeat-y;
+  background-position: right;
+  background-size: 80%;
 }
 
-/* good */
-.UserName {
+.assign-4-shape-3 {
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 80%;
 }
 
-/* good */
-.user-name {
-}
-
-/* good */
-.userName {
-}
-
-/* bad */
-.usernameprofile {
+.assign-4-shape-4 {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 50%;
 }
