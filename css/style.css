@@ -2,50 +2,64 @@ html {
   font-size: 20px;
 }
 
-div[class^="div-"] {
-  padding: 10px;
-  margin: 10px;
-}
-
-.div-1 {
-  border: 3px solid orangered;
-}
-
-.div-2 {
-  border: 3px solid darkcyan;
-}
-
-.div-1 p,
-.div-2 p {
-  padding: inherit;
-  border: 3px solid;
-  border-color: inherit;
+.parent {
+  width: 800px;
   background-color: #eee;
+}
+
+.parent div {
+  background-color: #ccc;
   text-align: center;
 }
 
-.font-1 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-style: italic;
+.parent .full {
+  float: left;
+  width: calc((100% - 60px));
+  margin: 15px;
+  padding: 15px;
 }
 
-.font-2 {
-  font-family: "Cairo", sans-serif;
-  font-weight: 700;
+.parent .three,
+.parent .two,
+.parent .four {
+  float: left;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
 }
 
-.font-3 {
-  font-family: "Jomhuria", cursive;
-  font-weight: 400;
+.parent .three {
+  width: calc((100% - 150px) / 3);
 }
 
-.root-1 {
-  font-size: 2.5rem;
+.parent .two {
+  width: calc((100% - 105px) / 2);
 }
-.root-2 {
-  font-size: 2rem;
+
+.parent .four {
+  width: calc((100% - 195px) / 4);
 }
-.root-3 {
-  font-size: 1.5rem;
+
+.clear {
+  clear: both;
+}
+
+.normal,
+.one,
+.twoo {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: #c1c1c1;
+  color: black;
+}
+
+.one {
+  background-color: rgba(193, 193, 193, 0.1);
+}
+
+.twoo {
+  opacity: 0.1;
 }
