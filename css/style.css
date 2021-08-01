@@ -1,25 +1,54 @@
-.parent .child .title {
-  color: red;
-}
-
-.parent .title {
-  color: blue;
-}
-
-.parent p,
-.title {
-  color: green;
-}
-
-.titles {
-  color: white;
-  background-color: brown;
-  font-size: 22px;
+.shadow {
   text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: black;
+  text-shadow: 0.5px 0.5px 0 red, 1px 1px 0 cornflowerblue,
+    1.5px 1.5px 0 blueviolet;
+}
+
+.one {
+  text-transform: uppercase;
+}
+
+.two {
+  text-transform: capitalize;
+}
+
+.three {
+  text-transform: lowercase;
+}
+
+div[class^="lorem"] {
   padding: 10px;
+  background-color: gainsboro;
+  width: 400px;
+  font-size: 20px;
   margin: 10px;
-  width: fit-content;
-  max-width: 400px;
-  max-height: 50px;
+}
+
+.lorem-2 {
   overflow: hidden;
+  word-break: break-word;
+  white-space: nowrap;
+}
+
+.lorem-3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+a {
+  display: inline-block;
+  margin: 0 50%;
+  text-transform: capitalize;
+  text-decoration: none;
+  background-color: darkcyan;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 10px solid darkslategray;
 }
