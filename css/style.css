@@ -1,54 +1,51 @@
-.shadow {
-  text-transform: capitalize;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  color: black;
-  text-shadow: 0.5px 0.5px 0 red, 1px 1px 0 cornflowerblue,
-    1.5px 1.5px 0 blueviolet;
-}
-
-.one {
-  text-transform: uppercase;
-}
-
-.two {
-  text-transform: capitalize;
-}
-
-.three {
-  text-transform: lowercase;
-}
-
-div[class^="lorem"] {
-  padding: 10px;
-  background-color: gainsboro;
-  width: 400px;
+html {
   font-size: 20px;
+}
+
+div[class^="div-"] {
+  padding: 10px;
   margin: 10px;
 }
 
-.lorem-2 {
-  overflow: hidden;
-  word-break: break-word;
-  white-space: nowrap;
+.div-1 {
+  border: 3px solid orangered;
 }
 
-.lorem-3 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.div-2 {
+  border: 3px solid darkcyan;
 }
 
-a {
-  display: inline-block;
-  margin: 0 50%;
-  text-transform: capitalize;
-  text-decoration: none;
-  background-color: darkcyan;
-  color: white;
-  padding: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom: 10px solid darkslategray;
+.div-1 p,
+.div-2 p {
+  padding: inherit;
+  border: 3px solid;
+  border-color: inherit;
+  background-color: #eee;
+  text-align: center;
+}
+
+.font-1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.font-2 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+}
+
+.font-3 {
+  font-family: "Jomhuria", cursive;
+  font-weight: 400;
+}
+
+.root-1 {
+  font-size: 2.5rem;
+}
+.root-2 {
+  font-size: 2rem;
+}
+.root-3 {
+  font-size: 1.5rem;
 }
