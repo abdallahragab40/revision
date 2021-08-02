@@ -1,65 +1,159 @@
-html {
-  font-size: 20px;
+.green,
+.blue,
+.red,
+.black {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  position: absolute;
 }
 
-.parent {
-  width: 800px;
+.blue {
+  background-color: dodgerblue;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+
+.green {
+  background-color: darkcyan;
+  top: 30px;
+  left: 30px;
+  z-index: 4;
+}
+
+.red {
+  background-color: crimson;
+  top: 40px;
+  left: 40px;
+  z-index: 5;
+}
+
+.black {
+  background-color: black;
+  left: 20px;
+  top: 30px;
+}
+
+.lorem {
+  position: relative;
+  width: 400px;
+  padding: 10px;
+  margin: 20px auto;
   background-color: #eee;
-}
-
-.parent div {
-  background-color: #ccc;
+  line-height: 1.8;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid;
+  border-color: crimson dodgerblue;
   text-align: center;
 }
 
-.parent .full {
-  float: left;
-  width: calc((100% - 60px));
-  margin: 15px;
-  padding: 15px;
+.lorem .top-left,
+.lorem .bottom-left {
+  position: absolute;
+  background-color: dodgerblue;
+  color: #fff;
+  left: -15px;
+  font-size: 16px;
+  width: 30px;
+  text-align: center;
+  border-right: 2px solid crimson;
 }
 
-.parent .three,
-.parent .two,
-.parent .four {
-  float: left;
-  margin-left: 15px;
-  margin-bottom: 15px;
-  padding: 15px;
+.lorem .top-left {
+  top: -15px;
+}
+.lorem .bottom-left {
+  bottom: -15px;
 }
 
-.parent .three {
-  width: calc((100% - 150px) / 3);
+.lorem .top-right,
+.lorem .bottom-right {
+  position: absolute;
+  background-color: dodgerblue;
+  color: #fff;
+  right: -15px;
+  font-size: 16px;
+  width: 30px;
+  text-align: center;
+  border-left: 2px solid crimson;
 }
 
-.parent .two {
-  width: calc((100% - 105px) / 2);
+.lorem .top-right {
+  top: -15px;
 }
 
-.parent .four {
-  width: calc((100% - 195px) / 4);
+.lorem .bottom-right {
+  bottom: -15px;
 }
 
-.clear {
-  clear: both;
+.first-ul {
+  width: 400px;
+  list-style: none;
+  margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.normal,
-.one,
-.twoo {
-  margin: 20px auto;
-  width: 300px;
+.first-ul li {
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.first-ul ol li {
+  background-color: #fff;
+}
+
+.second-ul {
+  list-style-position: inside;
+}
+
+.second-ul li {
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+table {
+  width: 700px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px auto;
+  border-bottom: 2px solid darkcyan;
+}
+
+table caption {
   font-weight: bold;
-  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+table tr th {
+  background-color: #333;
+  color: #fff;
   padding: 20px;
-  background-color: #c1c1c1;
-  color: black;
 }
 
-.one {
-  background-color: rgba(193, 193, 193, 0.1);
+table tr td {
+  background-color: #eee;
+  text-align: center;
 }
 
-.twoo {
-  opacity: 0.1;
+table tr td img {
+  width: 80px;
+  height: 80px;
+}
+
+.view,
+.delete {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+}
+
+.view {
+  background-color: deepskyblue;
+}
+
+.delete {
+  background-color: crimson;
 }
