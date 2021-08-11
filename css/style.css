@@ -4,89 +4,117 @@
 
 /* * 1 */
 /* div {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  margin: 10px auto;
-  width: 300px;
-  height: 60px;
-  padding: 20px;
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  counter-increment: counter;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
   background-color: #eee;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: -4px -3px 0px 2px #e91e63, 4px 3px 0px 2px #2196f3;
 }
 
-div:empty {
-  background-color: red;
-} */
-
-/* * 2 */
-/* div {
-  margin: 10px auto;
-  padding: 20px;
-  background-color: #eee;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+div::before {
+  content: counter(counter);
+  position: absolute;
+  left: 35px;
+  top: -10px;
   text-align: center;
-  width: 400px;
+  width: 20px;
+  height: 20px;
+  font-family: arial, sans-serif;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
-div::first-letter {
-  background-color: red;
-  color: #fff;
-  padding: 10px;
-  margin-left: -100px;
+div::after {
+  content: "Element";
+  position: absolute;
+  text-align: center;
+  text-align: center;
+  font-size: 16px;
+  font-family: arial, sans-serif;
+  left: 20%;
+  top: 40%;
 } */
 
 /* * 3 */
-/* p {
-  background-color: #eee;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-  width: 400px;
+.container {
+  width: 550px;
   position: relative;
-  margin: 10px auto;
-  border-left: 2px solid crimson;
 }
 
-p::before {
-  content: attr(data-person);
+.plan {
+  padding: 20px;
   background-color: #eee;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-  position: absolute;
-  left: -100px;
-  top: 0;
-  width: 50px;
+  display: inline-block;
+  width: 230px;
+  height: 270px;
 }
 
-p::after {
-  content: "";
-  position: absolute;
-  left: -22px;
-  width: 0;
-  height: 0;
-  border: 10px solid;
-  border-color: transparent rgb(233, 30, 99) transparent transparent;
-} */
-
-/* * 4 */
-p {
-  background-color: #eee;
-  font-family: Arial, Helvetica, sans-serif;
+.plan__header {
   padding: 10px;
-  margin: 10px auto;
-  width: 500px;
-  border-right: 4px solid crimson;
-  position: relative;
-  counter-increment: title;
-}
-
-p:before {
-  content: counter(title);
-  position: absolute;
-  background-color: crimson;
+  background-color: deepskyblue;
   color: #fff;
-  padding: 10px;
   text-align: center;
-  top: 0;
-  left: -29px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.plan__price {
+  background-color: rgb(197, 197, 197);
+  width: 70%;
+  height: 70%;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  line-height: 5.5;
+  font-size: 2rem;
+  color: black;
+}
+
+.container::before {
+  content: " ";
+  width: 2px;
+  height: 100%;
+  background-color: dodgerblue;
+  position: absolute;
+  left: 42%;
+}
+
+.container::after {
+  content: "Or";
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: dodgerblue;
+  color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  left: 40%;
+  top: 50%;
 }
