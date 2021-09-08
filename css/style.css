@@ -1,33 +1,70 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-div {
-  width: 400px;
-  height: 200px;
-  background-color: #eee;
-  position: relative;
-  padding: 10px;
+/* .parent {
   margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  justify-content: space-between;
+  align-items: space-between;
 }
 
-div::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: 0;
-  height: 5px;
-  width: 100%;
+.parent div {
   background-color: red;
-  background-image: linear-gradient(
-    to right,
-    #2980b9 20%,
-    #27ae60 20%,
-    #27ae60 40%,
-    #d35400 40%,
-    #d35400 60%,
-    #8e44ad 60%,
-    #8e44ad 80%,
-    #c0392b 80%
-  );
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+} */
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
+.page {
+  height: 100vh;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "logo logo logo nav nav nav nav nav nav nav"
+    "cont cont cont cont cont cont cont side side side"
+    "foot foot foot foot foot foot foot foot foot foot";
+}
+h2 {
+  grid-area: logo;
+  background-color: crimson;
+  color: white;
+}
+nav {
+  grid-area: nav;
+  background-color: cornflowerblue;
+  color: white;
+}
+section {
+  grid-area: cont;
+  background-color: yellowgreen;
+  color: white;
+}
+aside {
+  grid-area: side;
+  background-color: coral;
+  color: white;
+}
+footer {
+  grid-area: foot;
+  background-color: black;
+  color: white;
 }
