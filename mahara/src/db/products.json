@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "name": "Cola",
+      "price": 50,
+      "count": 0,
+      "isAdded": false
+    },
+    {
+      "name": "Soda",
+      "price": "22",
+      "isAdded": false,
+      "count": 0,
+      "id": 4
+    }
+  ]
+}
