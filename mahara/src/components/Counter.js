@@ -3,46 +3,42 @@ import { Button } from "./Button";
 
 const Counter = () => {
   const [counter, setCounter] = useState(0);
-  const [title, setTitle] = useState("");
-  const amountRef = useRef();
-  const listOfCount = [1, 4, 6, 10, 50];
+  const [divData, setDivData] = useState({});
+  const [listOfCount, setListOfCount] = useState([1]);
+  const divRef = useRef();
 
   useEffect(() => {
-    document.title = `You clicked ${counter} times!`;
-  }, [counter]);
+    setDivData(divRef.current.getBoundingClientRect());
+  }, [listOfCount]);
 
-  useEffect(() => {
-    document.title = title;
-  }, [title]);
-
-  useEffect(() => {
-    amountRef.current.focus();
-  }, [amountRef]);
-
-  const handleTitle = () => {
-    setTitle("Title Clicked");
-  };
-
-  const counterClick = useCallback(
+  const onClick = useCallback(
     (n) => {
       setCounter((c) => c + n);
     },
     [setCounter]
   );
 
+  const AddMoreButton = () => {
+    setListOfCount([...listOfCount, 50]);
+  };
+
   return (
     <>
-      <input type="text" className="form-control m-2" ref={amountRef} />
-      {listOfCount.map((count) => (
-        <Button label={count} counterFn={counterClick} key={count} n={count} />
-      ))}
       <div className="m-2">
-        <Button label="count up" counterFn={counterClick} n={1} />
+        <Button label="Add more" onClick={AddMoreButton} />
+        <div ref={divRef}>
+          {listOfCount.map((count) => (
+            <>
+              <Button label={count} counterFn={onClick} key={count} n={count} />
+              <br />
+            </>
+          ))}
+        </div>
+        <br />
         <span className="badge bg-primary m-2">{counter}</span>
+        <br />
+        <pre>{JSON.stringify(divData, null, 2)}</pre>
       </div>
-      <button className="btn btn-primary m-2" onClick={handleTitle}>
-        Change Title
-      </button>
     </>
   );
 };
