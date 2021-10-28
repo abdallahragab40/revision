@@ -1,9 +1,18 @@
-import Page from "./components/context/Page";
+import { Provider } from "react-redux";
+import Posts from "./components/Posts";
+import PostForm from "./components/PostForm";
+import store from "./store";
 
 function App() {
   return (
     <>
-      <Page />
+      <Provider store={store}>
+        <div className="container text-center">
+          <PostForm />
+          <hr />
+          <Posts />
+        </div>
+      </Provider>
     </>
   );
 }
