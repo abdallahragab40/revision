@@ -1,34 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="customersApp">
+<html ng-app="customersApp">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AngularJs</title>
-    <style></style>
+    <title>Iterating Over Data</title>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
   </head>
-  <body ng-controller="CustomersController">
-    <div>
-      <h2>Customers</h2>
-      filter: <input type="text" />
-      <br />
-      <table>
-        <tr>
-          <th ng-click="doSort('name')">Name</th>
-          <th ng-click="doSort('joined')">Joined</th>
-          <th ng-click="doSort('city')">City</th>
-          <th ng-click="doSort('orderTotal')">Order Total</th>
-        </tr>
-        <tr ng-repeat="customer in customers">
-          <td>{{customer.name}}</td>
-          <td>{{customer.joined | date}}</td>
-          <td>{{customer.city}}</td>
-          <td>{{customer.orderTotal | currency}}</td>
-        </tr>
-      </table>
-    </div>
-    <script src="angular.js"></script>
+  <body>
+    <div ng-view></div>
+
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
     <script src="app/app.js"></script>
     <script src="app/controllers/customersController.js"></script>
+    <script src="app/controllers/ordersController.js"></script>
   </body>
 </html>

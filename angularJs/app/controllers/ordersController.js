@@ -1,12 +1,17 @@
 (function () {
-  var CustomersController = function ($scope) {
-    $scope.sortBy = "name";
-    $scope.reverse = false;
+  var OrdersController = function ($scope, $routeParams) {
+    var customerId = $routeParams.customerId;
+    $scope.orders = null;
 
-    $scope.doSort = function (propName) {
-      $scope.sortBy = propName;
-      $scope.reverse = !$scope.reverse;
-    };
+    function init() {
+      // Search the customers for the customerId
+      for (var i = 0, len = $scope.customers.length; i < len; i++) {
+        if ($scope.customers[i].id === parseInt(customerId)) {
+          $scope.orders = $scope.customers[i].orders;
+          break;
+        }
+      }
+    }
 
     $scope.customers = [
       {
@@ -71,11 +76,13 @@
         ],
       },
     ];
+
+    init();
   };
 
-  CustomersController.$inject = ["$scope"];
+  OrdersController.$inject = ["$scope", "$routeParams"];
 
   angular
     .module("customersApp")
-    .controller("CustomersController", CustomersController);
+    .controller("OrdersController", OrdersController);
 })();
