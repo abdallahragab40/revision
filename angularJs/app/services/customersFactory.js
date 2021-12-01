@@ -9,9 +9,16 @@
       return $http.get("/customers/" + customerId);
     };
 
-    customerFactory.$inject = ["$http"];
+    factory.getOrders = function () {
+      return $http.get("/orders");
+    };
+
+    factory.deleteCustomer = function (customerId) {
+      return $http.delete("/customers/" + customerId);
+    };
 
     return factory;
   };
+  customerFactory.$inject = ["$http"];
   angular.module("customersApp").factory("customersFactory", customerFactory);
 })();
